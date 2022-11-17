@@ -9,7 +9,7 @@ namespace NumberToWords.Tests {
     [TestMethod]
     public void Translate_CreateInstanceOfClass_True()
     {
-      NumberToAlpha translate = new NumberToAlpha();
+      NumberToAlpha translate = new NumberToAlpha(0);
     }
     [TestMethod]
     public void Translate_TakesIntergerArgument_Interger()

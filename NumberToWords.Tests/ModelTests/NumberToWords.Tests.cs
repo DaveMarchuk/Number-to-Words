@@ -24,8 +24,8 @@ namespace NumberToWords.Tests {
     [TestMethod]
     public void Translate_ReturnsStringFromInt_String()
     {
-      int numInput = 1;
-      string numToString = "hans";
+      int numInput = 10;
+      string numToString = "ten";
       NumberToAlpha translate = new NumberToAlpha(numInput);
       Assert.AreEqual(numToString, translate.NumPasser());
     }

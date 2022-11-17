@@ -22,7 +22,7 @@ namespace NumberToWords.Models
 
     public string NumPasser()
     {
-      string convertNum = "hans";
+      string convertNum = _numberWord[numberToPass];
       return convertNum;
     }
   }

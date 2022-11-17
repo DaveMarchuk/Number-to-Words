@@ -40,7 +40,6 @@ namespace NumberToWords.Models
       string convertNum;
       if(numberToPass > 10)
       {
-        
         if(numberToPass > 19)
         {
           string brokenNumber = numberToPass.ToString();

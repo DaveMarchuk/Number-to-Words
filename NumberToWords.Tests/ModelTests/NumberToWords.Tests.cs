@@ -11,5 +11,16 @@ namespace NumberToWords.Tests {
     {
       NumberToAlpha translate = new NumberToAlpha();
     }
+    [TestMethod]
+    public void Translate_TakesIntergerArgument_Interger()
+    {
+      // Arrange
+      int numInput = 5;
+      NumberToAlpha translate = new NumberToAlpha(numInput);
+      // Act
+
+      // Assert
+      Assert.AreEqual(typeof(int),numInput.GetType());
+    }
   }
 }

@@ -18,9 +18,16 @@ namespace NumberToWords.Tests {
       int numInput = 5;
       NumberToAlpha translate = new NumberToAlpha(numInput);
       // Act
-
       // Assert
-      Assert.AreEqual(typeof(int),numInput.GetType());
+      Assert.AreEqual(numInput,translate.numberToPass);
+    }
+    [TestMethod]
+    public void Translate_ReturnsStringFromInt_String()
+    {
+      int numInput = 1;
+      string numToString = "hans";
+      NumberToAlpha translate = new NumberToAlpha(numInput);
+      Assert.AreEqual(numToString, translate.NumPasser());
     }
   }
 }
